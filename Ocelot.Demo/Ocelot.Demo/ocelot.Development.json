@@ -1,0 +1,38 @@
+{
+  "Routes": [
+    {
+      
+      "DownstreamHeaderTransform": {
+          "name": "arya"
+        },
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7246
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Weather",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "2s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      },
+      "FileCacheOptions": { "TtlSeconds": 15 }
+
+    }
+    
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5021",
+    "RequestIdKey": "OcRequestId"
+  }
+}
