@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Na28Qqi9DddK4/2afQlJ+wA5bJZaZnPfJKsG041+RDEU4RIkJNOxW08/pwTJMZTcNbAta3EfjFmyaDBPFe8Fvw==",
+  "dgSpecHash": "3iAx8qWrh9e2h9wQVbzGSDQLM8ZVkfRh0Ze9uOK78pedjJhXtcwRnzmlV+OFPwNGzfXleedwITZAyI8bpahg7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj",
+  "projectFilePath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

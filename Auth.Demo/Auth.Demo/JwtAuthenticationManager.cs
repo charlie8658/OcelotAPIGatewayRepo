@@ -11,7 +11,7 @@ namespace Auth.Demo
 {
     public class JwtAuthenticationManager : IJwtAuthenticationManager
     {
-        private readonly IDictionary<string, string> users = new Dictionary<string, string>
+        private readonly IDictionary<string, string > users = new Dictionary<string, string>
         { { "arya", "arya500" },{"guruprakash","password" } };
 
         private readonly string key;

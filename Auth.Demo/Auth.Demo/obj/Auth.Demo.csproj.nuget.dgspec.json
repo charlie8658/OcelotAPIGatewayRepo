@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj": {}
+    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj": {
+    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj",
+        "projectUniqueName": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj",
         "projectName": "Auth.Demo",
-        "projectPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj",
+        "projectPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\Auth.Demo\\Auth.Demo\\Auth.Demo.csproj",
         "packagesPath": "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\Auth.Demo\\Auth.Demo\\obj\\",
+        "outputPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\Auth.Demo\\Auth.Demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

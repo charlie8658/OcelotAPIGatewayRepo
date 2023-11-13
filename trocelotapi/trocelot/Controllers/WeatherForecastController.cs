@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace trocelot.Controllers
@@ -30,6 +31,7 @@ namespace trocelot.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
+        
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

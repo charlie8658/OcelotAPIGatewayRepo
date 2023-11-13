@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\trocelotapi\\trocelot\\trocelot.csproj": {}
+    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\trocelotapi\\trocelot\\trocelot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\trocelotapi\\trocelot\\trocelot.csproj": {
+    "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\trocelotapi\\trocelot\\trocelot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\trocelotapi\\trocelot\\trocelot.csproj",
+        "projectUniqueName": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\trocelotapi\\trocelot\\trocelot.csproj",
         "projectName": "trocelot",
-        "projectPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\trocelotapi\\trocelot\\trocelot.csproj",
+        "projectPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\trocelotapi\\trocelot\\trocelot.csproj",
         "packagesPath": "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\trocelotapi\\trocelot\\obj\\",
+        "outputPath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\trocelotapi\\trocelot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"

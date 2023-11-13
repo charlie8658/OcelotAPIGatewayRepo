@@ -1,0 +1,86 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7246
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Weather",
+      "Key": "weatherapi",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      },
+      "HttpHandlerOptions": {
+        "UseTracing": true
+      },
+
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "Allowedscopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      },
+      "FileCacheOptions": { "TtlSeconds": 15 }
+
+    },
+
+    {
+
+      "DownstreamPathTemplate": "/api/employees",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/employees",
+      "Key": "Employees",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "2s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      },
+      "HttpHandlerOptions": {
+        "UseTracing": true
+      },
+      "FileCacheOptions": { "TtlSeconds": 15 }
+    }
+  ],
+  "Aggregates": [
+    {
+      "UpstreamPathTemplate": "/weatherandemployee",
+      "RouteKeys": [
+        "weatherapi",
+        "Employees"
+      ]
+    }
+  ],
+
+  "GlobalConfiguration": {
+    "RequestIdKey": "RequestIdis2345",
+    "BaseUrl": "https://localhost:5021"
+
+  }
+}

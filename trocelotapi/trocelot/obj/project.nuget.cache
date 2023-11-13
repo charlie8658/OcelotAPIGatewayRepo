@@ -1,15 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "nwp5SFEhmrE0x7zxmaulH7vsUhINrLxc1OmSv6UowcjPBlatMsKR57mX1qHn2Inh7SGYzMGa5q8bLw/N1ZWM4g==",
+  "dgSpecHash": "nVxLhRtTAHE2cURtSRaOujvCe6Kw3M+EgxahSVWEAsiKaIJLqvRR0BP2EXh6bkz0H1lXyuh4xjbh7v4Jk0NyvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\trocelotapi\\trocelot\\trocelot.csproj",
+  "projectFilePath": "C:\\Users\\aryaabinash_sahoo\\source\\repos\\OcelotAPIGateway\\trocelotapi\\trocelot\\trocelot.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "C:\\Users\\aryaabinash_sahoo\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

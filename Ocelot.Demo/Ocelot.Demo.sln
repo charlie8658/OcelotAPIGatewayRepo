@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.Demo", "Ocelot.Demo\Ocelot.Demo.csproj", "{DD9FD26A-8661-4AA6-B31B-D3EBD6837A72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.Demo", "Ocelot.Demo.csproj", "{4DF1483F-F687-4D5E-999A-865873396539}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DD9FD26A-8661-4AA6-B31B-D3EBD6837A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD9FD26A-8661-4AA6-B31B-D3EBD6837A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD9FD26A-8661-4AA6-B31B-D3EBD6837A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD9FD26A-8661-4AA6-B31B-D3EBD6837A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF1483F-F687-4D5E-999A-865873396539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF1483F-F687-4D5E-999A-865873396539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF1483F-F687-4D5E-999A-865873396539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF1483F-F687-4D5E-999A-865873396539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C7B2F802-F8F3-482A-BD57-6EC26B694AC6}
+		SolutionGuid = {EADCA6A5-C8E0-48EA-ADA8-16F78205F929}
 	EndGlobalSection
 EndGlobal
