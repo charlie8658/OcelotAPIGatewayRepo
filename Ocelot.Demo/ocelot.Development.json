@@ -21,6 +21,7 @@
       },
 
       "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHttpMethod": ["Post"],
 
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
