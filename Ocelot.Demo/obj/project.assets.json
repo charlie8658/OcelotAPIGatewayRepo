@@ -177,6 +177,28 @@
           }
         }
       },
+      "Consul/0.7.2.6": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2",
+          "System.Collections": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Http.WinHttpHandler": "4.0.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Thread": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Consul.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Consul.dll": {}
+        }
+      },
       "FluentValidation/8.6.2": {
         "type": "package",
         "dependencies": {
@@ -875,6 +897,19 @@
           "lib/netcoreapp3.1/Ocelot.Cache.CacheManager.dll": {}
         }
       },
+      "Ocelot.Provider.Consul/13.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Consul": "0.7.2.6",
+          "Ocelot": "13.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Ocelot.Provider.Consul.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ocelot.Provider.Consul.dll": {}
+        }
+      },
       "Ocelot.Provider.Polly/16.0.0": {
         "type": "package",
         "dependencies": {
@@ -1537,6 +1572,45 @@
             "rid": "unix"
           },
           "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Net.Http.WinHttpHandler/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.DiagnosticSource": "4.0.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.Compression": "4.1.0",
+          "System.Net.Http": "4.1.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.Http.WinHttpHandler.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2221,6 +2295,20 @@
           }
         }
       },
+      "System.Threading.Thread/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Threading.Thread.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Thread.dll": {}
+        }
+      },
       "System.Threading.Timer/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2448,6 +2536,19 @@
         "cachemanager.microsoft.extensions.logging.nuspec",
         "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Logging.dll",
         "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Logging.xml"
+      ]
+    },
+    "Consul/0.7.2.6": {
+      "sha512": "0inTc+PLbk/TELmdO12q5N/4lZ2kn5w2EmOqG0g686JXgr1OKEGPCuGZxWYE+NuROy7dwX/FBxKUTph7vuyjPA==",
+      "type": "package",
+      "path": "consul/0.7.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "consul.0.7.2.6.nupkg.sha512",
+        "consul.nuspec",
+        "lib/net45/Consul.dll",
+        "lib/netstandard1.3/Consul.dll"
       ]
     },
     "FluentValidation/8.6.2": {
@@ -3196,6 +3297,18 @@
         "lib/netcoreapp3.1/Ocelot.Cache.CacheManager.dll",
         "ocelot.cache.cachemanager.16.0.0.nupkg.sha512",
         "ocelot.cache.cachemanager.nuspec"
+      ]
+    },
+    "Ocelot.Provider.Consul/13.5.2": {
+      "sha512": "VdgHqNkZRjdI+MlFgsmtM1Vu850r6NLB1oVpLkPbhbJMUSH0kiJxk516aVCa/QkYZAGoPeeudfPRieDhtzB/Hw==",
+      "type": "package",
+      "path": "ocelot.provider.consul/13.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Ocelot.Provider.Consul.dll",
+        "ocelot.provider.consul.13.5.2.nupkg.sha512",
+        "ocelot.provider.consul.nuspec"
       ]
     },
     "Ocelot.Provider.Polly/16.0.0": {
@@ -4836,6 +4949,35 @@
         "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
         "system.net.http.4.3.0.nupkg.sha512",
         "system.net.http.nuspec"
+      ]
+    },
+    "System.Net.Http.WinHttpHandler/4.0.0": {
+      "sha512": "86HNmRaoJZRtu2Yrd3ZVC3kd8tvdYphuXhBlW+QFP5nuHzuCMThVLDWjSXRA4PIoiTPhxYggtKAjmBt6CAZGaw==",
+      "type": "package",
+      "path": "system.net.http.winhttphandler/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/net46/System.Net.Http.WinHttpHandler.dll",
+        "ref/netstandard1.3/System.Net.Http.WinHttpHandler.dll",
+        "ref/netstandard1.3/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/de/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/es/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/fr/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/it/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/ja/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/ko/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/ru/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/zh-hans/System.Net.Http.WinHttpHandler.xml",
+        "ref/netstandard1.3/zh-hant/System.Net.Http.WinHttpHandler.xml",
+        "runtimes/unix/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll",
+        "runtimes/win/lib/net46/System.Net.Http.WinHttpHandler.dll",
+        "runtimes/win/lib/netcore50/_._",
+        "runtimes/win/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll",
+        "system.net.http.winhttphandler.4.0.0.nupkg.sha512",
+        "system.net.http.winhttphandler.nuspec"
       ]
     },
     "System.Net.Primitives/4.3.0": {
@@ -6769,6 +6911,46 @@
         "system.threading.tasks.extensions.nuspec"
       ]
     },
+    "System.Threading.Thread/4.0.0": {
+      "sha512": "gIdJqDXlOr5W9zeqFErLw3dsOsiShSCYtF9SEHitACycmvNvY8odf9kiKvp6V7aibc8C4HzzNBkWXjyfn7plbQ==",
+      "type": "package",
+      "path": "system.threading.thread/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Threading.Thread.dll",
+        "lib/netcore50/_._",
+        "lib/netstandard1.3/System.Threading.Thread.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.xml",
+        "ref/netstandard1.3/de/System.Threading.Thread.xml",
+        "ref/netstandard1.3/es/System.Threading.Thread.xml",
+        "ref/netstandard1.3/fr/System.Threading.Thread.xml",
+        "ref/netstandard1.3/it/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ja/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ko/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ru/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hans/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hant/System.Threading.Thread.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.thread.4.0.0.nupkg.sha512",
+        "system.threading.thread.nuspec"
+      ]
+    },
     "System.Threading.Timer/4.3.0": {
       "sha512": "Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "type": "package",
@@ -6989,6 +7171,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.7",
       "Ocelot >= 16.0.1",
       "Ocelot.Cache.CacheManager >= 16.0.0",
+      "Ocelot.Provider.Consul >= 13.5.2",
       "Ocelot.Provider.Polly >= 16.0.0",
       "Ocelot.Tracing.Butterfly >= 16.0.0"
     ]
@@ -7048,6 +7231,10 @@
           "Ocelot.Cache.CacheManager": {
             "target": "Package",
             "version": "[16.0.0, )"
+          },
+          "Ocelot.Provider.Consul": {
+            "target": "Package",
+            "version": "[13.5.2, )"
           },
           "Ocelot.Provider.Polly": {
             "target": "Package",

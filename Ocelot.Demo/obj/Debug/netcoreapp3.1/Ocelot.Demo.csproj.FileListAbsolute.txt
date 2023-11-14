@@ -79,3 +79,7 @@ C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\n
 C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\netcoreapp3.1\Butterfly.OpenTracing.dll
 C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\netcoreapp3.1\MessagePack.dll
 C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\netcoreapp3.1\Ocelot.Tracing.Butterfly.dll
+C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\netcoreapp3.1\Ocelot.Provider.Consul.dll
+C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\Users\aryaabinash_sahoo\source\repos\OcelotAPIGateway\Ocelot.Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll

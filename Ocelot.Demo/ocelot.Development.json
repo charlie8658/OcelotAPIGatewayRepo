@@ -1,8 +1,10 @@
 ﻿{
   "Routes": [
     {
+      "UseServiceDiscovery":  true,
       "DownstreamPathTemplate": "/WeatherForecast",
       "DownstreamScheme": "https",
+      "ServiceDiscovery": "weather",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -21,7 +23,7 @@
       },
 
       "UpstreamHttpMethod": [ "Get" ],
-      "DownstreamHttpMethod": ["Post"],
+      //"DownstreamHttpMethod": ["Post"],
 
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
@@ -39,9 +41,10 @@
     },
 
     {
-
+      "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/employees",
       "DownstreamScheme": "https",
+      "ServiceName": "employees",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -80,8 +83,13 @@
   ],
 
   "GlobalConfiguration": {
-    "RequestIdKey": "RequestIdis2345",
-    "BaseUrl": "https://localhost:5021"
+    //"RequestIdKey": "RequestIdis2345",
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 5021,
+      "Type": "Consul"
+    }
+    //"BaseUrl": "https://localhost:5021"
 
   }
 }

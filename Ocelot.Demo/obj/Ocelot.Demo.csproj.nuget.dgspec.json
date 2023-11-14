@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[16.0.0, )"
             },
+            "Ocelot.Provider.Consul": {
+              "target": "Package",
+              "version": "[13.5.2, )"
+            },
             "Ocelot.Provider.Polly": {
               "target": "Package",
               "version": "[16.0.0, )"

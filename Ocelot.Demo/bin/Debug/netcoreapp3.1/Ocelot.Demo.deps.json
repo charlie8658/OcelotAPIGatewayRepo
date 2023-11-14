@@ -34,6 +34,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.7",
           "Ocelot": "16.0.1",
           "Ocelot.Cache.CacheManager": "16.0.0",
+          "Ocelot.Provider.Consul": "13.5.2",
           "Ocelot.Provider.Polly": "16.0.0",
           "Ocelot.Tracing.Butterfly": "16.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -297,7 +298,7 @@
           "System.Threading.Tasks.Reference": "4.1.2.0",
           "System.Threading.Tasks.Extensions.Reference": "4.3.1.0",
           "System.Threading.Tasks.Parallel": "4.0.4.0",
-          "System.Threading.Thread": "4.1.2.0",
+          "System.Threading.Thread.Reference": "4.1.2.0",
           "System.Threading.ThreadPool": "4.1.2.0",
           "System.Threading.Timer.Reference": "4.1.2.0",
           "System.Transactions": "4.0.0.0",
@@ -508,6 +509,30 @@
         },
         "compile": {
           "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Logging.dll": {}
+        }
+      },
+      "Consul/0.7.2.6": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Collections": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Http.WinHttpHandler": "4.0.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Thread": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Consul.dll": {
+            "assemblyVersion": "0.7.2.6",
+            "fileVersion": "0.7.2.6"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Consul.dll": {}
         }
       },
       "FluentValidation/8.6.2": {
@@ -921,6 +946,21 @@
           "lib/netcoreapp3.1/Ocelot.Cache.CacheManager.dll": {}
         }
       },
+      "Ocelot.Provider.Consul/13.5.2": {
+        "dependencies": {
+          "Consul": "0.7.2.6",
+          "Ocelot": "16.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ocelot.Provider.Consul.dll": {
+            "assemblyVersion": "13.5.2.0",
+            "fileVersion": "13.5.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ocelot.Provider.Consul.dll": {}
+        }
+      },
       "Ocelot.Provider.Polly/16.0.0": {
         "dependencies": {
           "Ocelot": "16.0.1",
@@ -1274,6 +1314,46 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
+      "System.Net.Http.WinHttpHandler/4.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.DiagnosticSource": "4.7.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.Compression": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Http.WinHttpHandler.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.Http.WinHttpHandler.dll": {}
+        }
+      },
       "System.Net.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -1600,6 +1680,11 @@
           "System.Collections": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Threading.Thread/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
         }
       },
       "System.Threading.Timer/4.3.0": {
@@ -3217,7 +3302,7 @@
         },
         "compileOnly": true
       },
-      "System.Threading.Thread/4.1.2.0": {
+      "System.Threading.Thread.Reference/4.1.2.0": {
         "compile": {
           "System.Threading.Thread.dll": {}
         },
@@ -3421,6 +3506,13 @@
       "sha512": "sha512-MKMKg4GFBC0BhvYaK4qGdfIlb7Wz/gMMzudvsjPNV3MWbwvtOgNnZTCaNisFqB8LY58kzik74YtWMEf7ghvV4A==",
       "path": "cachemanager.microsoft.extensions.logging/2.0.0-beta-1629",
       "hashPath": "cachemanager.microsoft.extensions.logging.2.0.0-beta-1629.nupkg.sha512"
+    },
+    "Consul/0.7.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0inTc+PLbk/TELmdO12q5N/4lZ2kn5w2EmOqG0g686JXgr1OKEGPCuGZxWYE+NuROy7dwX/FBxKUTph7vuyjPA==",
+      "path": "consul/0.7.2.6",
+      "hashPath": "consul.0.7.2.6.nupkg.sha512"
     },
     "FluentValidation/8.6.2": {
       "type": "package",
@@ -3715,6 +3807,13 @@
       "sha512": "sha512-TpemaaXXPezYDjmeMRhLuuG5zzGr7Se69A2tW0uDtcQyT1RflglPv+jwzYQ4WhtS2tlxZS1/JhguK6FBSfiV3g==",
       "path": "ocelot.cache.cachemanager/16.0.0",
       "hashPath": "ocelot.cache.cachemanager.16.0.0.nupkg.sha512"
+    },
+    "Ocelot.Provider.Consul/13.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VdgHqNkZRjdI+MlFgsmtM1Vu850r6NLB1oVpLkPbhbJMUSH0kiJxk516aVCa/QkYZAGoPeeudfPRieDhtzB/Hw==",
+      "path": "ocelot.provider.consul/13.5.2",
+      "hashPath": "ocelot.provider.consul.13.5.2.nupkg.sha512"
     },
     "Ocelot.Provider.Polly/16.0.0": {
       "type": "package",
@@ -4024,6 +4123,13 @@
       "path": "system.net.http/4.3.0",
       "hashPath": "system.net.http.4.3.0.nupkg.sha512"
     },
+    "System.Net.Http.WinHttpHandler/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-86HNmRaoJZRtu2Yrd3ZVC3kd8tvdYphuXhBlW+QFP5nuHzuCMThVLDWjSXRA4PIoiTPhxYggtKAjmBt6CAZGaw==",
+      "path": "system.net.http.winhttphandler/4.0.0",
+      "hashPath": "system.net.http.winhttphandler.4.0.0.nupkg.sha512"
+    },
     "System.Net.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4282,6 +4388,13 @@
       "sha512": "sha512-npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
       "path": "system.threading.tasks.extensions/4.3.0",
       "hashPath": "system.threading.tasks.extensions.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Thread/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gIdJqDXlOr5W9zeqFErLw3dsOsiShSCYtF9SEHitACycmvNvY8odf9kiKvp6V7aibc8C4HzzNBkWXjyfn7plbQ==",
+      "path": "system.threading.thread/4.0.0",
+      "hashPath": "system.threading.thread.4.0.0.nupkg.sha512"
     },
     "System.Threading.Timer/4.3.0": {
       "type": "package",
@@ -5616,7 +5729,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Threading.Thread/4.1.2.0": {
+    "System.Threading.Thread.Reference/4.1.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
