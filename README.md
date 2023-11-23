@@ -61,4 +61,4 @@ I welcome contributions from the community! Whether it's bug fixes, feature enha
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the https://github.com/charlie8658/OcelotAPIGatewayRepo/blob/master/LICENSE file for details.
