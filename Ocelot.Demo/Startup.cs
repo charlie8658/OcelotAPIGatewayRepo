@@ -15,6 +15,7 @@ using Ocelot.Middleware;
 using Ocelot.Provider.Consul;
 using Ocelot.Provider.Polly;
 using Ocelot.Tracing.Butterfly;
+using System.Configuration;
 using System.Text;
 
 
@@ -54,7 +55,9 @@ namespace Ocelot.Demo
                         option.CollectorUrl = "http://localhost:9618";
                         option.Service = "Ocelot";
                     })
-                    .AddConsul();
+                    .AddConsul()
+                    
+                    ;
 
 
         }
